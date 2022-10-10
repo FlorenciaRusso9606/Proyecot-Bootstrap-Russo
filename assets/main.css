@@ -1,0 +1,85 @@
+/* Font Family */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,300;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    /* Color Styles */
+    --color-text-primary:#0161c2;
+    --color-text-secondary: whitesmoke; 
+    --color-tertiary: #ffb300;
+    --color-tittles: #0161c2;
+    --color-white-hover: #FFFF;
+    --btn-primary: #ffb300;
+    --btn-primary-light: #dc9a00;
+   
+    --background-color: #f5f5f5; 
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--background-color);
+    color: var(--color-text-primary);
+}
+ul, ol{
+    list-style-type: none;
+}
+a{
+    text-decoration: none; 
+}
+.navbar-brand img{
+    height: 2.6rem;
+}
+.btn-menu{
+    color: var(--color-text-primary);
+}
+.nav-item{
+    padding: 0rem 1rem;
+}
+.navbar-toggler{
+    border: none !important;
+}
+.nav-link{
+    color: var(--color-tittles)!important;
+}
+.bi-list{
+    color: var(--color-tittles);
+    font-size: var(2.5)!important;
+}
+.hero-image{
+    background-image: url("./img/heromd.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+.container-form{
+    font-size: 1.5rem ;
+    width: 50%;
+}
+label{
+    padding-left: 0.5rem;
+}
+input{
+    height: 3.5rem;
+}
+
+@media (min-width: 700px){
+    .hero-image{
+        background-image: url("./img/hero.jpg");
+    }
+    .hero-text{
+        width: 48%;
+    }
+    .hero-text h1{
+        font-size: 3rem;
+    }
+    .btn-hero{
+        font-size: 1.5rem;
+    }
+}
